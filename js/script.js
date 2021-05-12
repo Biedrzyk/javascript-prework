@@ -1,8 +1,9 @@
-function playGame(playerInput) {
+{
+const playGame = function (playerInput) {
 
-	function clearMessages() { }
+	const clearMessages = function () { }
 
-	function getMoveName(argMoveId) {
+	const getMoveName = function (argMoveId) {
 		if (argMoveId == 1) {
 			return 'kamień';
 		} else if (argMoveId == 2) {
@@ -121,3 +122,4 @@ document.getElementById('play-paper').addEventListener('click', function () {
 document.getElementById('play-scissors').addEventListener('click', function () {
 	playGame(3);
 });
+}
