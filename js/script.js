@@ -1,4 +1,9 @@
 {
+
+let chooseRock = document.getElementById('play-rock');
+let choosePaper = document.getElementById('play-paper');
+let chooseScissors = document.getElementById('play-scissors');
+	
 const playGame = function (playerInput) {
 
 	const clearMessages = function () { }
@@ -16,7 +21,7 @@ const playGame = function (playerInput) {
 		}
 	}
 
-	function displayResult(argComputerMove, argPlayerMove) {
+	const displayResult = function (argComputerMove, argPlayerMove) {
 
 		console.log('moves:', argComputerMove, argPlayerMove);
 		printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
@@ -111,15 +116,15 @@ const playGame = function (playerInput) {
 	}*/
 }
 
-document.getElementById('play-rock').addEventListener('click', function () {
+chooseRock.addEventListener('click', function () {
 	playGame(1);
 });
 
-document.getElementById('play-paper').addEventListener('click', function () {
+choosePaper.addEventListener('click', function () {
 	playGame(2);
 });
 
-document.getElementById('play-scissors').addEventListener('click', function () {
+chooseScissors.addEventListener('click', function () {
 	playGame(3);
 });
 }
