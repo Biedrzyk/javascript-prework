@@ -1,8 +1,4 @@
 {
-
-let chooseRock = document.getElementById('play-rock');
-let choosePaper = document.getElementById('play-paper');
-let chooseScissors = document.getElementById('play-scissors');
 	
 const playGame = function (playerInput) {
 
@@ -115,6 +111,10 @@ const playGame = function (playerInput) {
 		printMessages('Powtórz ruch gracza');
 	}*/
 }
+
+const chooseRock = document.getElementById('play-rock');
+const choosePaper = document.getElementById('play-paper');
+const chooseScissors = document.getElementById('play-scissors');
 
 chooseRock.addEventListener('click', function () {
 	playGame(1);
